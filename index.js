@@ -655,41 +655,43 @@ var container = document.getElementById("grid-container");
         for(let j = 0;j<9;j++){
             if(q[i][j] === 0){
                 QList[i][j].innerText = "";
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
+
             }
             //兵
             if(q[i][j] === 1 || q[i][j] === -1){
                 QList[i][j].innerText = "兵";
-                
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //炮
             if(q[i][j] === 2 || q[i][j] === -2){
                 QList[i][j].innerText = "炮"
-               
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //车 
             if(q[i][j] === 3 || q[i][j] === -3){
                 QList[i][j].innerText = "车"
-                
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //马
             if(q[i][j] === 4 || q[i][j] === -4){
                 QList[i][j].innerText = "马"
-               
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //象 
             if(q[i][j] === 5 || q[i][j] === -5){
                 QList[i][j].innerText = "象"
-               
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //士 
             if(q[i][j] === 6 || q[i][j] === -6){
                 QList[i][j].innerText = "士"
-               
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             //将
             if(q[i][j] === 7 || q[i][j] === -7){
                 QList[i][j].innerText = "将"
-                
+                QList[i][j].style.border = "2px solid rgb(159, 159, 159)";
             }
             if(q[i][j] < 0){
                 QList[i][j].style.color = "red"  
@@ -699,7 +701,8 @@ var container = document.getElementById("grid-container");
 
             if(clickQ !== undefined){
                 if(i === clickQ.x && j === clickQ.y){
-                QList[i][j].style.fontSize = "3em"
+                    QList[i][j].style.border = "2px solid ";
+
             }
             }
             
